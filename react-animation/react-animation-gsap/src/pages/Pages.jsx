@@ -1,5 +1,5 @@
 import React from 'react';
-
+import NewRecord from 'components/NewRecord'
 export const Home = () => {
     return (
         <div className="page">
@@ -11,7 +11,9 @@ export const Home = () => {
 
 export const Login = () => {
     return (
-        <div className="page"> <h1>Login Page Come On In</h1></div>
+        <div className="page"> <h1>Login Page Come On In</h1>
+         <NewRecord>jimo</NewRecord>
+        </div>
     );
 }
 
