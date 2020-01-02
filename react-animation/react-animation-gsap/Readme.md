@@ -1,1 +1,1 @@
-#Animating React With GSAP
+# How To Use GSAP With React
