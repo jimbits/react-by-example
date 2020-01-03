@@ -1,5 +1,5 @@
 import React from 'react'
-import {Users, User, FullName, Email, Bio} from './styles'
+import {Users, User, FullName, Email, Bio, PhoneNumber} from './styles'
 import {PlaceholderFemale, PlaceholderMale} from 'icons'
 
 
@@ -17,11 +17,14 @@ function UserImage(props){
 
 function NewRecord (props){
    return (
-     <User>
+     <User>      
        <FullName>
          {props.data.firstName} {props.data.lastName}
-       <Email>{props.data.email}</Email>
        </FullName>
+       <Email>{props.data.email}</Email>
+       <PhoneNumber>
+         {props.data.phoneNumber}
+       </PhoneNumber>
        <UserImage imageSrc={props.data.picture}/>
        <Bio>
          <h2>Bio</h2>
